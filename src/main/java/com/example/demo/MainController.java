@@ -22,7 +22,7 @@ public class MainController {
 	@GetMapping({"", "/"})
 	public ResponseEntity<?> health(){
 		Map<String, Object> map = new HashMap<>();
-		map.put("key", "22222");
+		map.put("key", "2222");
 		return ResponseEntity.ok().body(map);
 	}
 	
