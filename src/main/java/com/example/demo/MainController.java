@@ -13,9 +13,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
 	@GetMapping({"", "/"})
-	public ResponseEntity<?>index(){
+	public ResponseEntity<?> index(){
 		Map<String, Object> map = new HashMap<>();
 		map.put("key", "11111");
 		return ResponseEntity.ok().body(map);
 	}
+	
+	@GetMapping({"", "/"})
+	public ResponseEntity<?> health(){
+		Map<String, Object> map = new HashMap<>();
+		map.put("key", "22222");
+		return ResponseEntity.ok().body(map);
+	}
+	
 }
